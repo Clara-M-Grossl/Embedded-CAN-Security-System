@@ -104,9 +104,8 @@ O sistema é composto por dois microcontroladores **PIC16F877A**, comunicando-se
 ├── software/
 |      ├── fuzzer/            # Código do Fuzzer
 |      └── ECUvitima/         # Código da Vítima
-├── hardware/
-|      ├── fuzzer/            # Simulação Proteus do Fuzzer (.pdsprj)
-|      └── ECUvitima/         # Simulação Proteus da Vítima (.pdsprj)
+├── hardware/                 # Simulação Proteus (.pdsprj)
+|   
 ├── docs/                     # Relatório e documentação
 └── README.md
 ```
