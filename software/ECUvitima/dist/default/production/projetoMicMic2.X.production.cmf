@@ -1,0 +1,910 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\projetoMicMic2.X.production.o
+cinit CODE 0 11 11 25 2 1
+text1 CODE 0 ED9 ED9 23 2 1
+text2 CODE 0 EB6 EB6 23 2 1
+text3 CODE 0 325 325 E9 2 1
+text4 CODE 0 4CA 4CA A0 2 1
+text5 CODE 0 7FD 7FD 1 2 1
+text6 CODE 0 E53 E53 13 2 1
+text7 CODE 0 FA9 FA9 57 2 1
+text8 CODE 0 6F0 6F0 65 2 1
+text9 CODE 0 7B3 7B3 48 2 1
+text10 CODE 0 68A 68A 66 2 1
+text11 CODE 0 E66 E66 14 2 1
+text12 CODE 0 E23 E23 E 2 1
+text13 CODE 0 E31 E31 10 2 1
+text14 CODE 0 F2B F2B 36 2 1
+text15 CODE 0 56A 56A 99 2 1
+text16 CODE 0 E15 E15 E 2 1
+text17 CODE 0 DEF DEF 8 2 1
+text18 CODE 0 603 603 87 2 1
+text19 CODE 0 F61 F61 48 2 1
+text20 CODE 0 755 755 5E 2 1
+text21 CODE 0 E08 E08 D 2 1
+text22 CODE 0 E7A E7A 1A 2 1
+text23 CODE 0 E94 E94 22 2 1
+text24 CODE 0 E41 E41 12 2 1
+text25 CODE 0 DFF DFF 9 2 1
+text26 CODE 0 EFC EFC 2F 2 1
+maintext CODE 0 36 36 2EF 2 1
+cstackCOMMON COMMON 1 70 70 9 1 1
+cstackBANK0 BANK0 1 20 20 2F 1 1
+cstackBANK1 BANK1 1 A0 A0 26 1 1
+intentry CODE 0 4 4 A 2 1
+bssBANK0 BANK0 1 4F 4F 1B 1 1
+bssBANK1 BANK1 1 C6 C6 24 1 1
+idataBANK1 CODE 0 7FB 7FB 2 2 1
+strings STRING 0 40E 40E BC 2 1
+dataBANK1 BANK1 1 EA EA 2 1 1
+clrtext CODE 0 DF7 DF7 8 2 1
+bssCOMMON COMMON 1 79 79 2 1 1
+config CONFIG 4 2007 2007 1 2 1
+$C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_17.o
+reset_vec CODE 0 0 0 3 2 1
+end_init CODE 0 E E 3 2 1
+config CONFIG 4 2007 2007 1 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 6A-6F 1
+RAM EC-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 6A-6F 1
+BANK1 EC-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 7FE-DEE 2
+CONST 1000-1FFF 2
+ENTRY 3-3 2
+ENTRY 7FE-DEE 2
+ENTRY 1000-1FFF 2
+IDLOC 2000-2003 2
+CODE 3-3 2
+CODE 7FE-DEE 2
+CODE 1000-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7B-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 7FE-DEE 2
+STRCODE 1000-1FFF 2
+STRING 3-3 2
+STRING 7FE-DEE 2
+STRING 1000-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\projetoMicMic2.X.production.o
+11 cinit CODE >697:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+11 cinit CODE >700:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+11 cinit CODE >750:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+12 cinit CODE >751:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+13 cinit CODE >752:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+18 cinit CODE >753:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+19 cinit CODE >754:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+1E cinit CODE >755:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+1F cinit CODE >774:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+20 cinit CODE >775:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+21 cinit CODE >776:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+22 cinit CODE >777:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+23 cinit CODE >778:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+28 cinit CODE >781:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+29 cinit CODE >782:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+2A cinit CODE >783:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+2B cinit CODE >784:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+30 cinit CODE >787:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+31 cinit CODE >788:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+32 cinit CODE >794:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+32 cinit CODE >796:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+33 cinit CODE >797:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+4 intentry CODE >53:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+EFC text26 CODE >53:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+EFC text26 CODE >54:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+F02 text26 CODE >55:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+F03 text26 CODE >56:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+F05 text26 CODE >57:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+F07 text26 CODE >59:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+F09 text26 CODE >59:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+F0D text26 CODE >60:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+F12 text26 CODE >60:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+F16 text26 CODE >60:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+F1A text26 CODE >61:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+F20 text26 CODE >62:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+F22 text26 CODE >65:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+DFF text25 CODE >49:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+E41 text24 CODE >50:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+E94 text23 CODE >37:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+E7A text22 CODE >38:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+E08 text21 CODE >39:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+755 text20 CODE >42:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+F61 text19 CODE >40:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+F6F text19 CODE >40:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+F72 text19 CODE >40:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+F8F text19 CODE >40:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+F92 text19 CODE >40:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+603 text18 CODE >41:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+60D text18 CODE >41:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+627 text18 CODE >41:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+640 text18 CODE >41:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+643 text18 CODE >41:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+669 text18 CODE >41:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+672 text18 CODE >41:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+685 text18 CODE >41:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+DEF text17 CODE >36:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+E15 text16 CODE >52:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+56A text15 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+56A text15 CODE >13:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+56D text15 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+571 text15 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+576 text15 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+578 text15 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+57A text15 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+57C text15 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+57E text15 CODE >17:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+57E text15 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+582 text15 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+587 text15 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+589 text15 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+58B text15 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+58D text15 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+58F text15 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+597 text15 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+59B text15 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+59F text15 CODE >24:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5A1 text15 CODE >25:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5A2 text15 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5A4 text15 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5AB text15 CODE >27:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5AD text15 CODE >25:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5B1 text15 CODE >30:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5B3 text15 CODE >30:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5BA text15 CODE >31:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5BC text15 CODE >31:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5C0 text15 CODE >31:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5C4 text15 CODE >31:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5C8 text15 CODE >31:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5CC text15 CODE >32:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5CF text15 CODE >32:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5D3 text15 CODE >32:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5D7 text15 CODE >32:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5DA text15 CODE >33:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5DB text15 CODE >35:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5DC text15 CODE >35:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5E2 text15 CODE >35:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5E4 text15 CODE >36:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5EA text15 CODE >38:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5EF text15 CODE >39:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5F4 text15 CODE >39:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5F6 text15 CODE >39:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5F8 text15 CODE >39:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+5FA text15 CODE >40:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+602 text15 CODE >41:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+F2B text14 CODE >44:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+F36 text14 CODE >44:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+F3C text14 CODE >44:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+E31 text13 CODE >47:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+E23 text12 CODE >45:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+E66 text11 CODE >46:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+68A text10 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+68A text10 CODE >13:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+694 text10 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+698 text10 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+69C text10 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+69E text10 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+69F text10 CODE >17:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6A1 text10 CODE >17:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6A8 text10 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6AA text10 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6AE text10 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6B0 text10 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6B7 text10 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6B9 text10 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6BD text10 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6C1 text10 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6C5 text10 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6C9 text10 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6CC text10 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6D0 text10 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6D4 text10 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6D7 text10 CODE >24:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6D8 text10 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6D9 text10 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6DF text10 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6E1 text10 CODE >27:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6E7 text10 CODE >29:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+6EF text10 CODE >30:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+7B3 text9 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7B3 text9 CODE >119:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7BB text9 CODE >121:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7C1 text9 CODE >122:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7C4 text9 CODE >122:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7C5 text9 CODE >122:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7C7 text9 CODE >122:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7CB text9 CODE >122:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7CC text9 CODE >122:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7CE text9 CODE >122:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7D2 text9 CODE >122:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7D3 text9 CODE >122:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7D5 text9 CODE >122:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7D8 text9 CODE >123:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7DA text9 CODE >123:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7E1 text9 CODE >124:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7E2 text9 CODE >124:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7E8 text9 CODE >124:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7EA text9 CODE >125:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7EE text9 CODE >125:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7F2 text9 CODE >128:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+7FA text9 CODE >129:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+6F0 text8 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+6F0 text8 CODE >13:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+6F3 text8 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+6F7 text8 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+6FA text8 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+6FC text8 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+6FE text8 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+702 text8 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+705 text8 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+707 text8 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+709 text8 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+70B text8 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+711 text8 CODE >24:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+713 text8 CODE >25:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+714 text8 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+715 text8 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+719 text8 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+71B text8 CODE >27:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+71D text8 CODE >25:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+721 text8 CODE >30:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+722 text8 CODE >30:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+726 text8 CODE >30:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+728 text8 CODE >31:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+72A text8 CODE >31:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+72E text8 CODE >31:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+732 text8 CODE >32:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+735 text8 CODE >32:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+738 text8 CODE >33:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+739 text8 CODE >35:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+73A text8 CODE >35:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+73E text8 CODE >35:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+740 text8 CODE >36:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+746 text8 CODE >38:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+74B text8 CODE >39:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+74E text8 CODE >39:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+750 text8 CODE >40:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+754 text8 CODE >41:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+FA9 text7 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FA9 text7 CODE >12:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FAA text7 CODE >13:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FAE text7 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FB1 text7 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FB3 text7 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FB5 text7 CODE >17:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FB9 text7 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FBC text7 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FBE text7 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FC4 text7 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FC6 text7 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FC7 text7 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FC8 text7 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FCC text7 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FCE text7 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FD0 text7 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FD4 text7 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FD6 text7 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FDA text7 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FDE text7 CODE >27:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FE1 text7 CODE >27:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FE4 text7 CODE >28:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FE5 text7 CODE >28:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FE9 text7 CODE >28:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FEB text7 CODE >29:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FF1 text7 CODE >31:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FF6 text7 CODE >32:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FF9 text7 CODE >32:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FFB text7 CODE >33:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+FFF text7 CODE >34:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+E53 text6 CODE >1:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\abs.c
+E53 text6 CODE >3:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\abs.c
+E5F text6 CODE >3:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\abs.c
+E65 text6 CODE >4:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\abs.c
+7FD text5 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\putch.c
+7FD text5 CODE >9:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\putch.c
+4CA text4 CODE >8:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+4CA text4 CODE >12:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+4D6 text4 CODE >13:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+4DC text4 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+4DD text4 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+4E3 text4 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+4FB text4 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+50D text4 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+521 text4 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+525 text4 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+529 text4 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+539 text4 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+547 text4 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+557 text4 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+55B text4 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+567 text4 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+569 text4 CODE >24:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+325 text3 CODE >1177:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+325 text3 CODE >1201:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+332 text3 CODE >1201:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+336 text3 CODE >1202:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+33A text3 CODE >1204:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+33E text3 CODE >1205:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+342 text3 CODE >1291:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+346 text3 CODE >1361:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+34E text3 CODE >1361:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+35A text3 CODE >1361:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+35E text3 CODE >1404:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+36B text3 CODE >1406:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+370 text3 CODE >1408:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+372 text3 CODE >1409:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+379 text3 CODE >1411:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+39C text3 CODE >1412:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+3AF text3 CODE >1416:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+3BA text3 CODE >1417:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+3C4 text3 CODE >1418:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+3CD text3 CODE >1424:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+3E5 text3 CODE >1423:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+3EC text3 CODE >1806:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+3F4 text3 CODE >1811:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+40D text3 CODE >1814:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+EB6 text2 CODE >1817:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+EB6 text2 CODE >1822:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+EBA text2 CODE >1826:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+EBB text2 CODE >1830:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+EC8 text2 CODE >1826:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+ED2 text2 CODE >1826:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+ED6 text2 CODE >1835:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+ED8 text2 CODE >1840:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+ED9 text1 CODE >9:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_sprintf.c
+ED9 text1 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_sprintf.c
+EDD text1 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_sprintf.c
+EE1 text1 CODE >17:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_sprintf.c
+EE3 text1 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_sprintf.c
+EE5 text1 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_sprintf.c
+EF2 text1 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_sprintf.c
+EFB text1 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_sprintf.c
+36 maintext CODE >68:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+36 maintext CODE >70:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+39 maintext CODE >71:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+3B maintext CODE >72:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+3C maintext CODE >74:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+41 maintext CODE >75:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+44 maintext CODE >77:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+51 maintext CODE >78:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+56 maintext CODE >79:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+5B maintext CODE >80:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+60 maintext CODE >81:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+65 maintext CODE >83:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+6D maintext CODE >84:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+76 maintext CODE >86:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+76 maintext CODE >87:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+77 maintext CODE >90:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+7D maintext CODE >91:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+8B maintext CODE >92:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+91 maintext CODE >93:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+A9 maintext CODE >94:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+AF maintext CODE >95:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+B7 maintext CODE >96:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+BF maintext CODE >97:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+C8 maintext CODE >98:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+CE maintext CODE >99:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+CF maintext CODE >100:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+D7 maintext CODE >101:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+DF maintext CODE >102:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+E8 maintext CODE >103:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+EF maintext CODE >105:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+F6 maintext CODE >110:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+FE maintext CODE >111:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+109 maintext CODE >112:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+14C maintext CODE >114:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+152 maintext CODE >116:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+169 maintext CODE >117:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+170 maintext CODE >120:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+187 maintext CODE >121:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+18F maintext CODE >122:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+198 maintext CODE >124:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+19D maintext CODE >127:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+1A5 maintext CODE >128:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+1AE maintext CODE >132:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+1B4 maintext CODE >133:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+1BC maintext CODE >135:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+1C2 maintext CODE >136:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+1C4 maintext CODE >137:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+1C9 maintext CODE >138:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+1CC maintext CODE >139:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+1D4 maintext CODE >140:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+1DD maintext CODE >141:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+1DE maintext CODE >142:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+1E4 maintext CODE >143:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+1E8 maintext CODE >144:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+1ED maintext CODE >145:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+1F0 maintext CODE >146:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+1F8 maintext CODE >147:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+201 maintext CODE >148:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+202 maintext CODE >150:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+208 maintext CODE >151:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+20D maintext CODE >152:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+210 maintext CODE >153:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+215 maintext CODE >154:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+21D maintext CODE >155:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+226 maintext CODE >156:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+22E maintext CODE >157:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+237 maintext CODE >158:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+240 maintext CODE >158:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+244 maintext CODE >158:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+249 maintext CODE >159:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+257 maintext CODE >160:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+258 maintext CODE >161:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+25C maintext CODE >161:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+261 maintext CODE >162:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+262 maintext CODE >165:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+268 maintext CODE >166:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+26D maintext CODE >167:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+270 maintext CODE >168:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+271 maintext CODE >169:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+276 maintext CODE >170:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+27E maintext CODE >171:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+287 maintext CODE >172:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+28F maintext CODE >173:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+298 maintext CODE >174:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+2A1 maintext CODE >174:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+2A5 maintext CODE >174:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+2AA maintext CODE >175:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+2B8 maintext CODE >176:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+2B9 maintext CODE >177:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+2BD maintext CODE >177:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+2C2 maintext CODE >178:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+2C3 maintext CODE >182:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+2C8 maintext CODE >183:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+2CD maintext CODE >184:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+2D0 maintext CODE >185:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+2D5 maintext CODE >186:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+2DD maintext CODE >187:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+2E6 maintext CODE >189:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+2E9 maintext CODE >190:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+2F3 maintext CODE >191:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+2F6 maintext CODE >192:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+2F7 maintext CODE >193:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+301 maintext CODE >194:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+304 maintext CODE >195:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+305 maintext CODE >196:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+30F maintext CODE >197:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+312 maintext CODE >198:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+313 maintext CODE >199:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+31D maintext CODE >200:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+320 maintext CODE >201:C:\Users\clara\Documents\mplab\projetoMicMic2.X\victim.c
+DF7 clrtext CODE >761:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+DF7 clrtext CODE >762:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+DF8 clrtext CODE >763:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+DF8 clrtext CODE >764:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+DF9 clrtext CODE >765:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+DFA clrtext CODE >766:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+DFB clrtext CODE >767:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+DFC clrtext CODE >768:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+DFD clrtext CODE >769:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+DFE clrtext CODE >770:C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+___awdiv@counter 20 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+__LdataBANK1 0 0 ABS 0 dataBANK1 -
+__Hspace_0 1000 0 ABS 0 - -
+__Hspace_1 EC 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__HidataBANK1 0 0 ABS 0 idataBANK1 -
+_Lcd_Init EAA 0 CODE 0 text20 dist/default/production\projetoMicMic2.X.production.o
+_Lcd_Port 1D28 0 CODE 0 text23 dist/default/production\projetoMicMic2.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__end_of_Lcd_Init F66 0 CODE 0 text20 dist/default/production\projetoMicMic2.X.production.o
+__end_of_Lcd_Port 1D6C 0 CODE 0 text23 dist/default/production\projetoMicMic2.X.production.o
+?_abs 20 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+main@c C5 0 BANK1 1 cstackBANK1 dist/default/production\projetoMicMic2.X.production.o
+main@k C1 0 BANK1 1 cstackBANK1 dist/default/production\projetoMicMic2.X.production.o
+main@s A0 0 BANK1 1 cstackBANK1 dist/default/production\projetoMicMic2.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+?_vfprintf 36 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_17.o
+_dbuf C6 0 BANK1 1 bssBANK1 dist/default/production\projetoMicMic2.X.production.o
+_main 6C 0 CODE 0 maintext dist/default/production\projetoMicMic2.X.production.o
+_prec 65 0 BANK0 1 bssBANK0 dist/default/production\projetoMicMic2.X.production.o
+abs@a 20 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_17.o
+___stack_lo 0 0 STACK 2 stack C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_17.o
+start 1C 0 CODE 0 init C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_17.o
+Lcd_Port@a 73 0 COMMON 1 cstackCOMMON dist/default/production\projetoMicMic2.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+?___lmul 20 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+_OPTION_REGbits 81 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+__LidataBANK1 0 0 ABS 0 idataBANK1 -
+__Hpowerup 0 0 CODE 0 powerup -
+__end_of_vfpfcnvrt 81C 0 CODE 0 text3 dist/default/production\projetoMicMic2.X.production.o
+___awmod@sign 78 0 COMMON 1 cstackCOMMON dist/default/production\projetoMicMic2.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_17.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_17.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_17.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_17.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_17.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_17.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+___aldiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+_UART_Write 1C46 0 CODE 0 text12 dist/default/production\projetoMicMic2.X.production.o
+___aldiv@sign 29 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+___awdiv@sign 21 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_vfpfcnvrt 64A 0 CODE 0 text3 dist/default/production\projetoMicMic2.X.production.o
+_ADCON0 1F 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_ADCON1 9F 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_ADRESH 1E 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_ADRESL 9E 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+UART_Init@baud 2E 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+___awdiv@dividend 75 0 COMMON 1 cstackCOMMON dist/default/production\projetoMicMic2.X.production.o
+__end_of___lmul FF6 0 CODE 0 text9 dist/default/production\projetoMicMic2.X.production.o
+main@pkt B0 0 BANK1 1 cstackBANK1 dist/default/production\projetoMicMic2.X.production.o
+main@pot BF 0 BANK1 1 cstackBANK1 dist/default/production\projetoMicMic2.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+_ADC_Init 1BFE 0 CODE 0 text25 dist/default/production\projetoMicMic2.X.production.o
+_ADC_Read 1C82 0 CODE 0 text24 dist/default/production\projetoMicMic2.X.production.o
+___awdiv@divisor 73 0 COMMON 1 cstackCOMMON dist/default/production\projetoMicMic2.X.production.o
+__end_of___aldiv C06 0 CODE 0 text15 dist/default/production\projetoMicMic2.X.production.o
+__end_of___awdiv EAA 0 CODE 0 text8 dist/default/production\projetoMicMic2.X.production.o
+__end_of___awmod 2000 0 CODE 0 text7 dist/default/production\projetoMicMic2.X.production.o
+__end_of___lldiv DE0 0 CODE 0 text10 dist/default/production\projetoMicMic2.X.production.o
+_contagem_tempo 79 0 COMMON 1 bssCOMMON dist/default/production\projetoMicMic2.X.production.o
+__end_of_ADC_Init 1C10 0 CODE 0 text25 dist/default/production\projetoMicMic2.X.production.o
+__end_of_ADC_Read 1CA6 0 CODE 0 text24 dist/default/production\projetoMicMic2.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_17.o
+___stacklo 0 0 ABS 0 - C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_17.o
+__end_of_UART_Write 1C62 0 CODE 0 text12 dist/default/production\projetoMicMic2.X.production.o
+___lldiv@counter 34 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+start_initialization 22 0 CODE 0 cinit dist/default/production\projetoMicMic2.X.production.o
+___aldiv@quotient 2A 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+___lldiv@dividend 2C 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+_GO_nDONE FA 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_Lcd_Write_String C06 0 CODE 0 text18 dist/default/production\projetoMicMic2.X.production.o
+clear_ram0 1BEE 0 CODE 0 clrtext dist/default/production\projetoMicMic2.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+__pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\projetoMicMic2.X.production.o
+UART_Write_String@s 74 0 COMMON 1 cstackCOMMON dist/default/production\projetoMicMic2.X.production.o
+fputc@fp 75 0 COMMON 1 cstackCOMMON dist/default/production\projetoMicMic2.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_17.o
+vfpfcnvrt@done 2F 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 6C 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__stringbase 83A 0 STRING 0 strings dist/default/production\projetoMicMic2.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+_trancado EA 0 BANK1 1 dataBANK1 dist/default/production\projetoMicMic2.X.production.o
+__end_of_sprintf 1DF8 0 CODE 0 text1 dist/default/production\projetoMicMic2.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 22 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+_INTCONbits B 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hheap 0 0 HEAP 7 heap -
+__Hinit 1C 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsivt 1C 0 CODE 0 sivt -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Lheap 0 0 HEAP 7 heap -
+__Linit 1C 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsivt 1C 0 CODE 0 sivt -
+__Ltext 0 0 ABS 0 text -
+___lmul F66 0 CODE 0 text9 dist/default/production\projetoMicMic2.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_ISR 1DF8 0 CODE 0 text26 dist/default/production\projetoMicMic2.X.production.o
+_RB0 30 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_RB1 31 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_RB2 32 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_RB3 33 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_RB4 34 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_RB5 35 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_RD2 42 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_RD3 43 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_RD4 44 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_RD5 45 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_RD6 46 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_RD7 47 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+__S0 1000 0 ABS 0 - -
+__S1 EC 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_abs 1CA6 0 CODE 0 text6 dist/default/production\projetoMicMic2.X.production.o
+_Timer1_Init 1C2A 0 CODE 0 text16 dist/default/production\projetoMicMic2.X.production.o
+_flag_enviar_dados E6 0 BANK1 1 bssBANK1 dist/default/production\projetoMicMic2.X.production.o
+?_ADC_Read 73 0 COMMON 1 cstackCOMMON dist/default/production\projetoMicMic2.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+sprintf@fmt 3C 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+__end_of_Lcd_Write_String D14 0 CODE 0 text18 dist/default/production\projetoMicMic2.X.production.o
+__end_of_ISR 1E56 0 CODE 0 text26 dist/default/production\projetoMicMic2.X.production.o
+__end_of_abs 1CCC 0 CODE 0 text6 dist/default/production\projetoMicMic2.X.production.o
+__end_of_Lcd_Clear 1C2A 0 CODE 0 text21 dist/default/production\projetoMicMic2.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+___lldiv@divisor 28 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+__stringtab 81C 0 STRING 0 strings dist/default/production\projetoMicMic2.X.production.o
+Lcd_Write_String@a 74 0 COMMON 1 cstackCOMMON dist/default/production\projetoMicMic2.X.production.o
+Lcd_Write_String@i 22 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+Lcd_Write_String@t 20 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+Lcd_Write_String@y 21 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_17.o
+__pdataBANK1 EA 0 BANK1 1 dataBANK1 dist/default/production\projetoMicMic2.X.production.o
+ltemp0a 80 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+__end_of_Lcd_Cmd 1D28 0 CODE 0 text22 dist/default/production\projetoMicMic2.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+vfpfcnvrt@fmt 2B 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+___awmod@counter 77 0 COMMON 1 cstackCOMMON dist/default/production\projetoMicMic2.X.production.o
+_RCSTAbits 18 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_PIE1bits 8C 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+__ptext10 D14 0 CODE 0 text10 dist/default/production\projetoMicMic2.X.production.o
+__ptext11 1CCC 0 CODE 0 text11 dist/default/production\projetoMicMic2.X.production.o
+__ptext12 1C46 0 CODE 0 text12 dist/default/production\projetoMicMic2.X.production.o
+__ptext13 1C62 0 CODE 0 text13 dist/default/production\projetoMicMic2.X.production.o
+__ptext14 1E56 0 CODE 0 text14 dist/default/production\projetoMicMic2.X.production.o
+__ptext15 AD4 0 CODE 0 text15 dist/default/production\projetoMicMic2.X.production.o
+__ptext16 1C2A 0 CODE 0 text16 dist/default/production\projetoMicMic2.X.production.o
+__ptext17 1BDE 0 CODE 0 text17 dist/default/production\projetoMicMic2.X.production.o
+__ptext18 C06 0 CODE 0 text18 dist/default/production\projetoMicMic2.X.production.o
+__ptext19 1EC2 0 CODE 0 text19 dist/default/production\projetoMicMic2.X.production.o
+__ptext20 EAA 0 CODE 0 text20 dist/default/production\projetoMicMic2.X.production.o
+__ptext21 1C10 0 CODE 0 text21 dist/default/production\projetoMicMic2.X.production.o
+__ptext22 1CF4 0 CODE 0 text22 dist/default/production\projetoMicMic2.X.production.o
+__ptext23 1D28 0 CODE 0 text23 dist/default/production\projetoMicMic2.X.production.o
+__ptext24 1C82 0 CODE 0 text24 dist/default/production\projetoMicMic2.X.production.o
+__ptext25 1BFE 0 CODE 0 text25 dist/default/production\projetoMicMic2.X.production.o
+__ptext26 1DF8 0 CODE 0 text26 dist/default/production\projetoMicMic2.X.production.o
+_Lcd_Clear 1C10 0 CODE 0 text21 dist/default/production\projetoMicMic2.X.production.o
+___aldiv AD4 0 CODE 0 text15 dist/default/production\projetoMicMic2.X.production.o
+___awdiv DE0 0 CODE 0 text8 dist/default/production\projetoMicMic2.X.production.o
+___awmod 1F52 0 CODE 0 text7 dist/default/production\projetoMicMic2.X.production.o
+_Lcd_Set_Cursor 1EC2 0 CODE 0 text19 dist/default/production\projetoMicMic2.X.production.o
+___lldiv D14 0 CODE 0 text10 dist/default/production\projetoMicMic2.X.production.o
+__pmaintext 6C 0 CODE 0 maintext dist/default/production\projetoMicMic2.X.production.o
+__end_of_UART_Write_String 1CF4 0 CODE 0 text11 dist/default/production\projetoMicMic2.X.production.o
+___lmul@multiplier 20 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+_Leds_Off 1BDE 0 CODE 0 text17 dist/default/production\projetoMicMic2.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__end_of_Leds_Off 1BEE 0 CODE 0 text17 dist/default/production\projetoMicMic2.X.production.o
+main@k_361 C3 0 BANK1 1 cstackBANK1 dist/default/production\projetoMicMic2.X.production.o
+__end_of__stringtab 83C 0 STRING 0 strings dist/default/production\projetoMicMic2.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 79 0 COMMON 1 bssCOMMON dist/default/production\projetoMicMic2.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+_PIR1bits C 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+__Lend_init 1C 0 CODE 0 end_init -
+vfpfcnvrt@convarg 31 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_kmh_simulado E8 0 BANK1 1 bssBANK1 dist/default/production\projetoMicMic2.X.production.o
+end_of_initialization 64 0 CODE 0 cinit dist/default/production\projetoMicMic2.X.production.o
+__end_of_Lcd_Set_Cursor 1F52 0 CODE 0 text19 dist/default/production\projetoMicMic2.X.production.o
+__Hintentry 1C 0 CODE 0 intentry -
+Lcd_Set_Cursor@a 20 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+Lcd_Set_Cursor@b 77 0 COMMON 1 cstackCOMMON dist/default/production\projetoMicMic2.X.production.o
+Lcd_Set_Cursor@t 23 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+Lcd_Set_Cursor@y 22 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+Lcd_Set_Cursor@z 21 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+fputc@c 73 0 COMMON 1 cstackCOMMON dist/default/production\projetoMicMic2.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 22 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+?___aldiv 20 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+?___awdiv 73 0 COMMON 1 cstackCOMMON dist/default/production\projetoMicMic2.X.production.o
+?___awmod 73 0 COMMON 1 cstackCOMMON dist/default/production\projetoMicMic2.X.production.o
+?___lldiv 28 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+vfprintf@fmt 38 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+___awmod@dividend 75 0 COMMON 1 cstackCOMMON dist/default/production\projetoMicMic2.X.production.o
+__end_of_UART_Init 1EC2 0 CODE 0 text14 dist/default/production\projetoMicMic2.X.production.o
+__end_of_UART_Read 1C82 0 CODE 0 text13 dist/default/production\projetoMicMic2.X.production.o
+vfpfcnvrt@ap 2C 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+vfpfcnvrt@cp 30 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+vfpfcnvrt@fp 29 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+__ptext1 1DB2 0 CODE 0 text1 dist/default/production\projetoMicMic2.X.production.o
+__ptext2 1D6C 0 CODE 0 text2 dist/default/production\projetoMicMic2.X.production.o
+__ptext3 64A 0 CODE 0 text3 dist/default/production\projetoMicMic2.X.production.o
+__ptext4 994 0 CODE 0 text4 dist/default/production\projetoMicMic2.X.production.o
+__ptext5 FFA 0 CODE 0 text5 dist/default/production\projetoMicMic2.X.production.o
+__ptext6 1CA6 0 CODE 0 text6 dist/default/production\projetoMicMic2.X.production.o
+__ptext7 1F52 0 CODE 0 text7 dist/default/production\projetoMicMic2.X.production.o
+__ptext8 DE0 0 CODE 0 text8 dist/default/production\projetoMicMic2.X.production.o
+__ptext9 F66 0 CODE 0 text9 dist/default/production\projetoMicMic2.X.production.o
+vfprintf@ap 39 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+vfprintf@fp 36 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+vfprintf@cfmt 3A 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+___aldiv@dividend 24 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+_sprintf 1DB2 0 CODE 0 text1 dist/default/production\projetoMicMic2.X.production.o
+_vfprintf 1D6C 0 CODE 0 text2 dist/default/production\projetoMicMic2.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+sprintf@ap 40 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+_UART_Write_String 1CCC 0 CODE 0 text11 dist/default/production\projetoMicMic2.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_UART_Init 1E56 0 CODE 0 text14 dist/default/production\projetoMicMic2.X.production.o
+_UART_Read 1C62 0 CODE 0 text13 dist/default/production\projetoMicMic2.X.production.o
+__end_of_vfprintf 1DB2 0 CODE 0 text2 dist/default/production\projetoMicMic2.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_17.o
+___heap_lo 0 0 ABS 0 - C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_17.o
+__end_of__initialization 64 0 CODE 0 cinit dist/default/production\projetoMicMic2.X.production.o
+___awmod@divisor 73 0 COMMON 1 cstackCOMMON dist/default/production\projetoMicMic2.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+Lcd_Cmd@a 76 0 COMMON 1 cstackCOMMON dist/default/production\projetoMicMic2.X.production.o
+__pidataBANK1 FF6 0 CODE 0 idataBANK1 dist/default/production\projetoMicMic2.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+___lmul@product 74 0 COMMON 1 cstackCOMMON dist/default/production\projetoMicMic2.X.production.o
+___lmul@multiplicand 24 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+UART_Write@d 73 0 COMMON 1 cstackCOMMON dist/default/production\projetoMicMic2.X.production.o
+___lldiv@quotient 30 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\projetoMicMic2.X.production.o
+wtemp0a 7F 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_TXSTAbits 98 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+__end_of_Timer1_Init 1C46 0 CODE 0 text16 dist/default/production\projetoMicMic2.X.production.o
+__Hend_init 22 0 CODE 0 end_init -
+___aldiv@counter 28 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+vfpfcnvrt@c 35 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+sprintf@f 41 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+sprintf@s 3B 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+__end_of_main 64A 0 CODE 0 maintext dist/default/production\projetoMicMic2.X.production.o
+__end_of_fputc AD4 0 CODE 0 text4 dist/default/production\projetoMicMic2.X.production.o
+?_sprintf 3B 0 BANK0 1 cstackBANK0 dist/default/production\projetoMicMic2.X.production.o
+_RCREG 1A 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_SPBRG 99 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_T1CON 10 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_TMR1H F 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_TMR1L E 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+_TXREG 19 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+__end_of_putch FFC 0 CODE 0 text5 dist/default/production\projetoMicMic2.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/production\projetoMicMic2.X.production.o
+_flags 69 0 BANK0 1 bssBANK0 dist/default/production\projetoMicMic2.X.production.o
+_fputc 994 0 CODE 0 text4 dist/default/production\projetoMicMic2.X.production.o
+_putch FFA 0 CODE 0 text5 dist/default/production\projetoMicMic2.X.production.o
+_width 63 0 BANK0 1 bssBANK0 dist/default/production\projetoMicMic2.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\projetoMicMic2.X.production.o
+_Lcd_Cmd 1CF4 0 CODE 0 text22 dist/default/production\projetoMicMic2.X.production.o
+__HdataBANK1 0 0 ABS 0 dataBANK1 -
+__initialization 22 0 CODE 0 cinit dist/default/production\projetoMicMic2.X.production.o
+btemp0 7E 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+btemp1 7F 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+__pbssBANK0 4F 0 BANK0 1 bssBANK0 dist/default/production\projetoMicMic2.X.production.o
+__pbssBANK1 C6 0 BANK1 1 bssBANK1 dist/default/production\projetoMicMic2.X.production.o
+__pstrings 81C 0 STRING 0 strings dist/default/production\projetoMicMic2.X.production.o
+ttemp0a 7F 0 ABS 0 - dist/default/production\projetoMicMic2.X.production.o
+___int_stack_hi 0 0 STACK 2 stack C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_17.o
+___int_stack_lo 0 0 STACK 2 stack C:\Users\clara\AppData\Local\Temp\xcAs4gg.0\driver_tmp_17.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text1 0 ED9 1DB2 23 2
+text2 0 EB6 1D6C 23 2
+text4 0 4CA 994 334 2
+text6 0 E53 1CA6 13 2
+text7 0 FA9 1F52 57 2
+text11 0 E66 1CCC 14 2
+text12 0 E23 1C46 E 2
+text13 0 E31 1C62 10 2
+text14 0 F2B 1E56 36 2
+text16 0 E15 1C2A E 2
+text17 0 DEF 1BDE 8 2
+text19 0 F61 1EC2 48 2
+text21 0 E08 1C10 D 2
+text22 0 E7A 1CF4 1A 2
+text23 0 E94 1D28 22 2
+text24 0 E41 1C82 12 2
+text25 0 DFF 1BFE 9 2
+text26 0 EFC 1DF8 2F 2
+cstackCOMMON 1 70 70 B 1
+cstackBANK0 1 20 20 4A 1
+cstackBANK1 1 A0 A0 4C 1
+intentry 0 4 8 40A 2
+reset_vec 0 0 0 3 2
+strings 0 40E 81C BC 2
+clrtext 0 DF7 1BEE 8 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
